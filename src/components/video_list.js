@@ -12,8 +12,8 @@ const VideoList = (props) => {
 		)
 	});
 
-	return (<div>
-		<h3>Lista de Videos</h3>
+	return (<div className="card">
+		
 		<ul className="">
 			{videoItems}
 		</ul>

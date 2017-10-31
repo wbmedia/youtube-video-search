@@ -33,7 +33,8 @@ class App extends Component {
     YTSearch({key: API_KEY, term: term }, (videos) => {
     this.setState({
       videos: videos,
-      selectedVideo: videos[0]
+      selectedVideo: videos[0],
+     
     }); 
     //console.log(videos);
     });
@@ -41,7 +42,7 @@ class App extends Component {
 
   render() {
     const videoSearch = _.debounce((term) => {this.videoSearch(term) }, 400);
-    
+
     return (
       <div className="App">
         <header className="App-header">
