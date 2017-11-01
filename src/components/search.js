@@ -8,19 +8,13 @@ class SearchBar extends Component {
 	}
 	render() {
 		return (
-		<div className="field">
-			<div className="label">Buscar Video</div>
-			<div className="control">
-				<section>
-					<div className="columns">
-						<div className="column">
-							<input 
-							value={this.state.term}
-							onChange={e => this.onInputChange(e.target.value)}
-							className="input" />
-						</div>
-					</div>
-				</section>
+		<div >
+			<div>Buscar Video</div>
+			<div className="form-group">
+				<input 
+				value={this.state.term}
+				onChange={e => this.onInputChange(e.target.value)}
+				className="form-control" />
 			</div>
 		</div>
 		);

@@ -49,18 +49,28 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Youtube Search</h1>
         </header>
-         <div className="container is-fluid is-widescreen">
-          <div>
-             <SearchBar onSearchTermChange={videoSearch}  />
+        <div className="container">
+          <div className="row">
+              <div className="col-lg-12 col-md-12 col-sm-6">
+                <SearchBar onSearchTermChange={videoSearch}  />
+              </div>
           </div>
-           <div>
-             <VideoDetail video={this.state.selectedVideo} />
-           </div>
-           <div>
-             <VideoList 
+        </div>
+         <div className="container">
+          <div className="row">
+            <div className="col-lg-8">
+              <VideoDetail video={this.state.selectedVideo} />
+            </div>
+            <div className="col-lg-4">
+              <VideoList 
             onVideoSelect={selectedVideo => this.setState({selectedVideo}) }  
             videos={this.state.videos} />
-           </div>
+            </div>
+             
+             
+            
+          </div>
+          
            
           </div> 
          </div>
