@@ -22,7 +22,7 @@ class App extends Component {
       selectedVideo: null // if video is null will return a loading ...
     };
 
-    this.videoSearch('wcw');
+    this.videoSearch('web development');
 
     
   }
